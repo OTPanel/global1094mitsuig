@@ -35,7 +35,7 @@ CREATE TABLE `accounts` (
   `lastday` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `email` varchar(255) NOT NULL DEFAULT '',
   `creation` int(11) NOT NULL DEFAULT '0',
-  `vote` int(11) NOT NULL,
+  `vote` int(11) NOT NULL DEFAULT '0',
   `key` varchar(20) NOT NULL DEFAULT '0',
   `email_new` varchar(255) NOT NULL DEFAULT '',
   `email_new_time` int(11) NOT NULL DEFAULT '0',
@@ -49,7 +49,7 @@ CREATE TABLE `accounts` (
   `create_ip` int(11) NOT NULL DEFAULT '0',
   `last_post` int(11) NOT NULL DEFAULT '0',
   `flag` varchar(80) NOT NULL DEFAULT '',
-  `vip_time` int(11) NOT NULL,
+  `vip_time` int(11) NOT NULL DEFAULT '0',
   `guild_points` int(11) NOT NULL DEFAULT '0',
   `guild_points_stats` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
